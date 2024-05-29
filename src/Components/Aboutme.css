@@ -1,0 +1,33 @@
+/* Aboutme.css */
+
+.aboutme {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.aboutme div {
+    width: 45%;
+}
+
+.aboutme h3 {
+    font-size: 1.2em;
+    color: #333;
+}
+
+.aboutme p {
+    font-size: 1em;
+    color: #666;
+}
+
+.aboutme button {
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

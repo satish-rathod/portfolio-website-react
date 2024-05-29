@@ -1,0 +1,39 @@
+/* Profile.css */
+
+.profile {
+    text-align: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.profile h2 {
+    font-size: 2em;
+    color: #333;
+}
+
+.profile p {
+    font-size: 1.2em;
+    color: #666;
+}
+
+.profile button {
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cursor {
+    display: inline-block;
+    width: 1ch;
+    background-color: currentColor;
+    animation: cursor-blink 1s infinite;
+}
+
+@keyframes cursor-blink {
+    0%, 50% { opacity: 1; }
+    51%, 100% { opacity: 0; }
+}
