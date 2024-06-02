@@ -1,0 +1,31 @@
+#contact-me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.contact-content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+form, .contact-info {
+    flex: 1;
+    margin: 0 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+form input, form textarea, form button {
+    margin-bottom: 10px;
+}
+
+form input::placeholder, form textarea::placeholder {
+    color: #aaa;
+}
+
+.contact-info p {
+    margin-bottom: 10px;
+}

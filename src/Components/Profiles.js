@@ -1,23 +1,39 @@
-import React from 'react';
-import '../App.css';
+import React, { useState } from 'react';
+import './Profiles.css';
 
-const Profiles = () => {
+function ProfileItem({ profile }) {
+  const [isHovered, setIsHovered] = useState(false);
+
   return (
-    <section id="profiles">
+    <div 
+      className={`profile-item ${isHovered ? 'hovered' : ''}`}
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+    >
+      <div className="profile-symbol">{profile.symbol}</div>
+      <a href={profile.url} target="_blank" rel=" noreferrer">{profile.name}</a>
+    </div>
+  );
+}
+
+function Profiles() {
+  const profiles = [
+    { name: "GitHub", url: "https://github.com/yourusername", symbol: "G" },
+    { name: "LinkedIn", url: "https://linkedin.com/in/yourusername", symbol: "L" },
+    { name: "Twitter", url: "https://twitter.com/yourusername", symbol: "T" },
+    // add more profiles as needed
+  ];
+
+  return (
+    <section className="profiles">
       <h2>Profiles</h2>
-      <div className="profiles-list">
-        <div className="profile-item">
-          <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">GitHub</a>
-        </div>
-        <div className="profile-item">
-          <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-        </div>
-        <div className="profile-item">
-          <a href="https://twitter.com/yourusername" target="_blank" rel="noopener noreferrer">Twitter</a>
-        </div>
+      <div className="profiles-content">
+        {profiles.map((profile, index) => (
+          <ProfileItem key={index} profile={profile} />
+        ))}
       </div>
     </section>
   );
-};
+}
 
 export default Profiles;

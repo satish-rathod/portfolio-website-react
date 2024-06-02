@@ -1,13 +1,11 @@
 import React from 'react';
-import '../App.css';
+import './Portfolio.css';
 
 function Portfolio() {
   const projects = [
-    "ui/ux design",
-    "ui/ux design",
-    "web design",
-    "web development",
-    "web development"
+    { type: "ui/ux design", images: 2 },
+    { type: "web design", images: 1 },
+    { type: "web development", images: 2 }
   ];
 
   return (
@@ -15,9 +13,11 @@ function Portfolio() {
       <h2>Portfolio</h2>
       <div className="portfolio-items">
         {projects.map((project, index) => (
-          <div key={index} className="portfolio-item">
-            <img src={`path_to_image${index + 1}`} alt={project} />
-            <p>{project}</p>
+          <div key={index} className={`portfolio-item ${project.images === 1 ? 'long' : ''}`}>
+            {[...Array(project.images)].map((_, i) => (
+              <img key={i} src={`path_to_image${index + 1}_${i + 1}`} alt={project.type} />
+            ))}
+            <p>{project.type}</p>
           </div>
         ))}
       </div>

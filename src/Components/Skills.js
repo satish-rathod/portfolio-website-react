@@ -1,5 +1,5 @@
 import React from 'react';
-import '../App.css';
+import './Skills.css';
 
 function Skills() {
   const skills = [
@@ -16,12 +16,30 @@ function Skills() {
   return (
     <div className="skills">
       <h2>Skills</h2>
-      {skills.map((skill, index) => (
-        <div key={index} className="skill">
-          <h3>{skill.name}</h3>
-          <div className="skill-level" style={{ width: skill.level }}>{skill.level}</div>
+      <div className="skills-content">
+        <div className="skills-column">
+          {skills.slice(0, 4).map((skill, index) => (
+            <div key={index} className="skill">
+              <h3>{skill.name}</h3>
+              <div className="skill-level">
+                <div className="skill-progress" style={{ width: skill.level }}></div>
+                <span>{skill.level}</span>
+              </div>
+            </div>
+          ))}
         </div>
-      ))}
+        <div className="skills-column">
+          {skills.slice(4).map((skill, index) => (
+            <div key={index} className="skill">
+              <h3>{skill.name}</h3>
+              <div className="skill-level">
+                <div className="skill-progress" style={{ width: skill.level }}></div>
+                <span>{skill.level}</span>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
     </div>
   );
 }

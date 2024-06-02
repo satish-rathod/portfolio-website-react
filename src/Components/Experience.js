@@ -1,5 +1,5 @@
 import React from 'react';
-import '../App.css';
+import './Experience.css';
 
 function Experience() {
   const experiences = [
@@ -40,24 +40,26 @@ function Experience() {
     }
   ];
 
-  return (
-    <div className="experience">
-      <h2>Experience</h2>
-      {experiences.map((exp, index) => (
-        <div key={index} className="exp-item">
-          <div>
-          <h3>{exp.period}</h3>
-          <h4>{exp.title}</h4>
-          </div>
-          <div>
-          <h5>{exp.company}</h5>
-          <h6>{exp.location}</h6>
-          <p>{exp.text}</p>
-          </div>
+    return (
+      <div className="experience">
+        <h2>Experience</h2>
+        <div className="experience-content">
+          {experiences.map((experience, index) => (
+            <div key={index} className="experience-item">
+              <div className="experience-info">
+                <h3>{experience.period}</h3>
+                <p>{experience.title}</p>
+              </div>
+              <div className="experience-details">
+                <h3>{experience.company}</h3>
+                <p>{experience.location}</p>
+                <p>{experience.text}</p>
+              </div>
+            </div>
+          ))}
         </div>
-      ))}
-    </div>
-  );
+      </div>
+    );
 }
 
 export default Experience;

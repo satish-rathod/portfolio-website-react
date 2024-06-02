@@ -1,0 +1,24 @@
+.education {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.education-content {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.education-item {
+    width: 30%;
+}
+
+.education-item h3 {
+    margin-bottom: 10px;
+}
+
+.education-item p {
+    margin-bottom: 20px;
+}

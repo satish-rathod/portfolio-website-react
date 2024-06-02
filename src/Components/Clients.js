@@ -1,10 +1,16 @@
 import React from 'react';
-import '../App.css';
+import './Clients.css';
 
 function Clients() {
   const clients = [
-    "themeforest", "dribbble", "behance", "github", 
-    "flickR", "smungMung", "squareSpace", "bitBucket"
+    { name: "themeforest", logo: "/logos/themeforest.png" },
+    { name: "dribbble", logo: "/logos/dribbble.png" },
+    { name: "behance", logo: "/logos/behance.png" },
+    { name: "github", logo: "/logos/github.png" },
+    { name: "flickR", logo: "/logos/flickr.png" },
+    { name: "smungMung", logo: "/logos/smungmung.png" },
+    { name: "squareSpace", logo: "/logos/squarespace.png" },
+    { name: "bitBucket", logo: "/logos/bitbucket.png" }
   ];
 
   return (
@@ -13,7 +19,7 @@ function Clients() {
       <div className="client-items">
         {clients.map((client, index) => (
           <div key={index} className="client-item">
-            <p>{client}</p>
+            <img src={client.logo} alt={client.name} />
           </div>
         ))}
       </div>

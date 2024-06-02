@@ -1,0 +1,40 @@
+.skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.skills-content {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.skills-column {
+    width: 45%;
+}
+
+.skill {
+    margin-bottom: 20px;
+}
+
+.skill-level {
+    position: relative;
+    width: 100%;
+    height: 20px;
+    background-color: #ddd;
+}
+
+.skill-progress {
+    position: absolute;
+    height: 100%;
+    background-color: #4caf50;
+}
+
+.skill-level span {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
