@@ -4,7 +4,7 @@ import './Profile.css';
 
 function Profile() {
   const [index, setIndex] = useState(0);
-  const professions = ['UI/UX DESIGNER', 'WEB DEVELOPER', 'GRAPHIC DESIGNER', 'FRONT-END DEVELOPER'];
+  const professions = ['JAVA DEVELOPER', 'COMPETAIVE PROGRAMER', 'WEB 3 DEVELOPER', 'AI ENTHUSIAST', 'PYTHON DEVELOPER'];
 
   const handleTypingDone = () => {
     setIndex((prevIndex) => (prevIndex + 1) % professions.length);
@@ -12,10 +12,13 @@ function Profile() {
 
   return (
     <div className="profile">
-      <h2>HI, I AM SATRAT.</h2>
+      <div className="Profile-text">
+      <h2>HI, I AM</h2>
+      <h2>SATISH RATHOD.</h2>
       <Typewriter text={professions[index]} delay={100} onTypingDone={handleTypingDone} />
       <div>
         <button>DOWNLOAD resume</button>
+      </div>
       </div>
     </div>
   );

@@ -6,7 +6,7 @@ import './Navbar.css';
 const Navbar = () => {
     return (
         <nav className="navbar">
-            <RouterLink to="/" className="navbar-brand"><img src="./images/logo.png" alt="Satrat" /></RouterLink>
+            <RouterLink to="/" className="navbar-brand"><span className="logo-text">Satish</span></RouterLink>
             <ul className="navbar-nav">
                 <li className="nav-item"><Link to="education" smooth={true} duration={500} className="nav-link">Education</Link></li>
                 <li className="nav-item"><Link to="skills" smooth={true} duration={500} className="nav-link">Skills</Link></li>

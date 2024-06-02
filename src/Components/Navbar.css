@@ -6,10 +6,17 @@
 
     display: flex;
     justify-content: space-between;
+    align-items: center;
     background-color: #333;
     overflow: hidden;
 }
 
+.logo-text {
+    padding: 33px;
+    font-weight: bold;
+    color: white;
+    font-size: 2em;
+}
 .navbar-brand {
     margin-left: 10px;
 }
