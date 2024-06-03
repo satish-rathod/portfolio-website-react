@@ -1,13 +1,13 @@
 /* Profile.css */
 
 .profile {
-    padding-: 30vh;
+    padding: 30vh;
     position: relative;
     text-align: center;
     padding: 50px;
     height: 100vh;
     font-family: Arial, sans-serif;
-    background: url('/home/satish/CS/Course/T_four/Development/portfolio/portfolio/src/assets/images/wavy-black-white-background.jpg');
+    background-image: url("../assets/images/wavy-black-white-background.jpg");
     background-size: cover;
 }
 

@@ -21,7 +21,6 @@ function Profiles() {
     { name: "GitHub", url: "https://github.com/yourusername", symbol: "G" },
     { name: "LinkedIn", url: "https://linkedin.com/in/yourusername", symbol: "L" },
     { name: "Twitter", url: "https://twitter.com/yourusername", symbol: "T" },
-    // add more profiles as needed
   ];
 
   return (
