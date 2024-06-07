@@ -4,7 +4,7 @@ import './Profile.css';
 
 function Profile() {
   const [index, setIndex] = useState(0);
-  const professions = ['JAVA DEVELOPER', 'COMPETAIVE PROGRAMER', 'WEB 3 DEVELOPER', 'AI ENTHUSIAST', 'PYTHON DEVELOPER'];
+  const professions = ['JAVA DEVELOPER', 'COMPETATIVE PROGRAMER', 'WEB 3 DEVELOPER', 'AI ENTHUSIAST', 'PYTHON DEVELOPER'];
 
   const handleTypingDone = () => {
     setIndex((prevIndex) => (prevIndex + 1) % professions.length);
