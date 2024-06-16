@@ -3,8 +3,8 @@ import './Skills.css';
 
 function Skills() {
   const skills = [
-    { name: "Adobe Photoshop", level: "0%" },
-    { name: "Adobe Illustrator", level: "85%" },
+    { name: "java", level: "70%" },
+    { name: "DSA", level: "70%" },
     { name: "Adobe After Effects", level: "97%" },
     { name: "Sketch", level: "90%" },
     { name: "HTML 5", level: "90%" },

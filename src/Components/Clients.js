@@ -1,16 +1,10 @@
 import React from 'react';
 import './Clients.css';
+import scalerlogo from '../assets/logos/Scaler-Logo.svg';
 
 function Clients() {
   const clients = [
-    { name: "themeforest", logo: "/logos/themeforest.png" },
-    { name: "dribbble", logo: "/logos/dribbble.png" },
-    { name: "behance", logo: "/logos/behance.png" },
-    { name: "github", logo: "/logos/github.png" },
-    { name: "flickR", logo: "/logos/flickr.png" },
-    { name: "smungMung", logo: "/logos/smungmung.png" },
-    { name: "squareSpace", logo: "/logos/squarespace.png" },
-    { name: "bitBucket", logo: "/logos/bitbucket.png" }
+    { name: "themeforest", logo:scalerlogo },
   ];
 
   return (

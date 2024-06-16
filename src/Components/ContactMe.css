@@ -1,14 +1,22 @@
-#contact-me {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+body {
+    background-color: #fff;
+    color: #000;
 }
+.heading
+{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #000;
 
+}
 .contact-content {
     display: flex;
     justify-content: space-between;
-    margin-top: 20px;
+    margin-top: 50px; /* increased margin-top for more space */
+    width: 80%; /* control the width of the content */
+    margin: 0 auto; /* center the content */
 }
 
 form, .contact-info {
@@ -16,16 +24,29 @@ form, .contact-info {
     margin: 0 20px;
     display: flex;
     flex-direction: column;
+    background-color: #f2f2f2; /* light grey background */
+    padding: 20px; /* padding around the form and contact info */
+    border-radius: 5px; /* rounded corners */
 }
 
 form input, form textarea, form button {
-    margin-bottom: 10px;
+    margin-bottom: 20px; /* increased margin-bottom for more space */
+    padding: 10px; /* padding inside the input, textarea, and button */
+    border: none; /* remove default border */
+    border-radius: 5px; /* rounded corners */
+}
+
+form button {
+    background-color: #000; /* black background */
+    color: #fff; /* white text */
+    cursor: pointer; /* cursor style */
 }
 
 form input::placeholder, form textarea::placeholder {
-    color: #aaa;
+    color: #aaa; /* grey placeholder text */
 }
 
 .contact-info p {
-    margin-bottom: 10px;
+    margin-bottom: 20px; /* increased margin-bottom for more space */
+    line-height: 1.5; /* line spacing */
 }
