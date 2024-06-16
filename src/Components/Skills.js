@@ -3,7 +3,7 @@ import './Skills.css';
 
 function Skills() {
   const skills = [
-    { name: "Adobe Photoshop", level: "90%" },
+    { name: "Adobe Photoshop", level: "0%" },
     { name: "Adobe Illustrator", level: "85%" },
     { name: "Adobe After Effects", level: "97%" },
     { name: "Sketch", level: "90%" },
@@ -17,6 +17,7 @@ function Skills() {
     <div className="skills">
       <h2>Skills</h2>
       <div className="skills-content">
+        
         <div className="skills-column">
           {skills.slice(0, 4).map((skill, index) => (
             <div key={index} className="skill">
@@ -28,6 +29,7 @@ function Skills() {
             </div>
           ))}
         </div>
+        
         <div className="skills-column">
           {skills.slice(4).map((skill, index) => (
             <div key={index} className="skill">
@@ -39,6 +41,7 @@ function Skills() {
             </div>
           ))}
         </div>
+        
       </div>
     </div>
   );

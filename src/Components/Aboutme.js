@@ -1,6 +1,6 @@
 import React from 'react';
 import './Aboutme.css';
-
+import img from '../assets/images/PSX_20211107_140507.jpg';
 const Aboutme = () => {
     return (
         <div className="about-me">
@@ -31,13 +31,13 @@ const Aboutme = () => {
                     </div>
                 </div>
                 <div className="image-container">
-                    <img src="path_to_image" alt="profile" /> 
+                    <img src={img} alt="profile" /> 
                     <div className="social-links">
-                        <button>facebook</button>
-                        <button>twitter</button>
-                        <button>linkedin</button>
-                        <button>instagram</button>
-                        <button>github</button>
+                    <button className="button1">Button 1</button>
+                    <button className="button2">Button 2</button>
+                    <button className="button3">Button 3</button>
+                    <button className="button4">Button 4</button>
+                    <button className="button5">Button 5</button>
                     </div>
                 </div>
             </div>
