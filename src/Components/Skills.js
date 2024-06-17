@@ -3,12 +3,12 @@ import './Skills.css';
 
 function Skills() {
   const skills = [
-    { name: "java", level: "70%" },
+    { name: "java", level: "55%" },
     { name: "DSA", level: "70%" },
-    { name: "Adobe After Effects", level: "97%" },
-    { name: "Sketch", level: "90%" },
-    { name: "HTML 5", level: "90%" },
-    { name: "CSS 3 Animation", level: "85%" },
+    { name: "Python", level: "55%" },
+    { name: "Draw Io", level: "60%" },
+    { name: "Vanilla Js", level: "70%" },
+    { name: "springboot", level: "65%" },
     { name: "Communication", level: "97%" },
     { name: "Creativity", level: "90%" },
   ];

@@ -4,40 +4,19 @@ import './Experience.css';
 function Experience() {
   const experiences = [
     {
-      period: "2018 - Present",
-      title: "Creative Director",
-      company: "Hoplony Tech Limited",
-      location: "New York, USA",
-      text: "some text here"
+      period: "2024 - Present",
+      title: "intern",
+      company: "Scaler Academy",
+      location: "Bangalore, India",
+      text: "making local video streaming app"
     },
     {
-      period: "2016 - 2018",
-      title: "Associate Design Director",
-      company: "Hoplony Tech Limited",
-      location: "New York, USA",
-      text: "some text here"
+      period: "2023 - 2023",
+      title: "team member : codewizards",
+      company: "ICPC prelims",
+      location: "Bangalore, India",
+      text: "AIR 977 "
     },
-    {
-      period: "2013 - 2016",
-      title: "Senior UI/UX Designer",
-      company: "Hoplony Tech Limited",
-      location: "New York, USA",
-      text: "some text here"
-    },
-    {
-      period: "2012 - 2013",
-      title: "UI/UX Designer",
-      company: "Hoplony Tech Limited",
-      location: "New York, USA",
-      text: "some text here"
-    },
-    {
-      period: "2010 - 2012",
-      title: "Frontend Developer",
-      company: "Hoplony Tech Limited",
-      location: "New York, USA",
-      text: "some text here"
-    }
   ];
 
     return (
